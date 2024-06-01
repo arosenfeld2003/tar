@@ -8,7 +8,7 @@
 #include "append.h"
 #include "utils.h"
 
-const char *no_files = "my_tar: no files or directories specified\n"
+const char *no_files = "my_tar: no files or directories specified\n";
 const char *no_options = "my_tar: Must specify one of -c, -r, -t, -u, -x\n";
 
 void show_correct_usage() {
