@@ -12,3 +12,9 @@ $(TARGET): $(OBJS)
 clean:
 	rm -f $(OBJS) $(TARGET)
 
+test: all
+	@for test in tests/*.sh; do \
+        echo "Running $$test..."; \
+        bash $$test || exit 1; \
+    done
+	@echo "All tests passed."

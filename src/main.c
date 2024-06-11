@@ -33,6 +33,7 @@ int main (int argc, char* argv[]) {
         if (argv[i][0] == '-') {
             for (int j = 1; argv[i][j] != '\0'; j++) {
                 switch (argv[i][j]) {
+                    // only one of these flags can be passed
                     case 'c': case 'r': case 'u': case 'd': case 't': case 'x':
                         if (mode != '\0') {
                             print_error("my_tar: Can't specify multiple modes\n");
