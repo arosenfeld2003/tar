@@ -76,20 +76,19 @@ int main (int argc, char* argv[]) {
         case 'c':
             create_archive(archive_file, &argv[file_arg_start], argc - file_arg_start);
             break;
-        case 'r':
-            append_archive(archive_file, &argv[file_arg_start], argc - file_arg_start);
-            break;
-        case 't':
-            list_archive(archive_file);
-            break;
-        case 'u':
-            update_archive(archive_file, &argv[file_arg_start], argc - file_arg_start);
-            break;
-        case 'x':
-            extract_archive(archive_file);
-            break;
+//        case 'r':
+//            append_archive(archive_file, &argv[file_arg_start], argc - file_arg_start);
+//            break;
+//        case 't':
+//            list_archive(archive_file);
+//            break;
+//        case 'u':
+//            update_archive(archive_file, &argv[file_arg_start], argc - file_arg_start);
+//            break;
+//        case 'x':
+//            extract_archive(archive_file);
+//            break;
         default:
-            print_usage();
             return 1;
     }
 
